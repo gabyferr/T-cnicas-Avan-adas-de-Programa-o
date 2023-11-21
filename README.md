@@ -1,4 +1,4 @@
-# Tecnicas-Avan-adas-de-Programa-o
+# Tecnicas-Avancadas-de-Programaco
 Professor: Welington
 
 Ementa
