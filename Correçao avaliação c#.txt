@@ -1,0 +1,130 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        //Exercicio 01
+        /*
+        int [] vet = new int[10];
+        int i,qvp=0;
+        Console.WriteLine("Informe 10 valores:");
+        for(i = 0; i < 10; i++)
+        {
+            vet[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        for(i = 0; i < 10; i++)
+        {
+            if (vet[i] %2 == 0) { 
+                qvp++; 
+            }
+        }
+        Console.WriteLine("A quantidade de valores pares é "+qvp);
+        */
+        //Exercicio 02
+        /*
+        int[] vet = new int[10];
+        int i;
+        Console.WriteLine("Informe 10 valores:");
+        for (i = 0; i < 10; i++)
+        {
+            vet[i] = Convert.ToInt32(Console.ReadLine());
+        }
+        for(i = 0; i < 10; i++)
+        {
+            if (vet[i] < 0)
+            {
+                vet[i] = 0;
+            }
+        }
+        Console.WriteLine("Vetor modificado ");
+        for(i=0; i < 10; i++)
+        {
+            Console.WriteLine(vet[i]);
+        }
+        */
+        //Exercicio 03
+        /*
+        int[,] mat = new int[4,4];
+        int l, c,soma=0,somap=0,somas=0;
+        Console.WriteLine("Informe 16 valores:");
+        for (l = 0; l < 4; l++)
+        {
+            for(c = 0; c < 4; c++)
+            {
+                mat[l,c] = Convert.ToInt32(Console.ReadLine());
+                soma = soma + mat[l,c];
+            }
+            
+        }
+        for(l = 0; l < 4; l++)
+        {
+            for(c = 0; c < 4; c++)
+            {
+                if(l==c)
+                {
+                    somap += mat[l, c];
+                }
+                if(l+c==3) 
+                {
+                    somas += mat[l, c];
+                }
+            }
+        }
+        Console.WriteLine("A soma dos elementos da matriz é " + soma);
+        Console.WriteLine("A soma da diagonal principal é " + somap);
+        Console.WriteLine("A soma da diagonal secundaria é " + somas);
+        */
+        //Exercicio 04
+        /*
+        int[,] mat = new int[3, 3];
+        int l, c;
+        for (l = 0; l < 3; l++)
+        {
+            for (c = 0; c < 3; c++)
+            {
+                if (c == 0 || l == 2)
+                {
+                    mat[l, c] = 1;
+                }
+                else
+                {
+                    mat[l, c] = 0;
+                }
+            }
+        }
+        for (l = 0; l < 3; l++)
+        {
+            for (c = 0; c < 3; c++)
+            {
+                Console.Write(" "+mat[l, c]);
+            }
+            Console.WriteLine(" ");
+        }*/
+        //Exercicio 05
+        int[,] mat = new int[7, 4];
+        int l, c,menor,pl=0,pc=0;
+        Console.WriteLine("Informe 28 valores: ");
+        for(l = 0; l < 4; l++)
+        {
+            for(c = 0; c < 2; c++)
+            {
+                mat[l, c] = Convert.ToInt32(Console.ReadLine());
+            }
+        }
+        menor = mat[0, 0];
+        for (l = 0; l < 4; l++)
+        {
+            for (c = 0; c < 2; c++)
+            {
+                if (menor > mat[l, c])
+                {
+                    menor = mat[l, c];
+                    pl = l;
+                    pc = c;
+                }
+            }
+        }
+        Console.WriteLine("O menor valor da matriz é " + menor);
+        Console.WriteLine("Seu indice é linha " + pl + " e coluna " + pc);
+
+    }
+}
